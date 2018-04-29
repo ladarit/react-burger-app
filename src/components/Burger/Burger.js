@@ -22,10 +22,12 @@ const burger = (props) => {
     }
     console.log(ingredientsArray);
     return(
-        <div className={cssClasses.Burger}>            
-            <BurgerIngredient type='bread-top'/>
-            {ingredientsArray}
-            <BurgerIngredient type='bread-bottom'/>
+        <div className={cssClasses.BurgerScroolHider}>
+            <div className={cssClasses.Burger}>            
+                <BurgerIngredient type='bread-top'/>
+                {ingredientsArray}
+                <BurgerIngredient type='bread-bottom'/>
+            </div>
         </div>
     );
 }

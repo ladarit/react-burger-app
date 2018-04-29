@@ -1,26 +1,27 @@
+.BurgerScroolHider {
+    overflow: hidden;
+    margin: auto;
+}
+
 .Burger {
     width: 100%;
     margin: auto;
     height: 250px;
-    overflow: scroll;
+    overflow-y: scroll;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
-}
-
-@media (min-width: 1000px) and (min-height: 700px){
-    .Burger{
-        width: 700px;
-        height: 600px;
-
-    }
+    padding-right: 20px;
 }
 
 @media (min-width: 500px) and (min-height: 401px){
     .Burger{
-        width: 450px;
-        height: 400px;
+        width: 320px;
+        height: 320px;
     }
+    .BurgerScroolHider {
+        width: 320px;
+    }  
 }
 
 @media (min-width: 500px) and (max-height: 400px){
@@ -28,4 +29,28 @@
         width: 350px;
         height: 300px;
     }
+    .BurgerScroolHider {
+        width: 350px;
+    }  
 }
+
+@media (min-width: 1000px) and (min-height: 901px){
+    .Burger{
+        width: 550px;
+        height: 550px;
+    }
+    .BurgerScroolHider {
+        width: 550px;
+    }  
+}
+
+@media (min-width: 1000px) and (max-height: 900px){
+    .Burger{
+        width: 320px;
+        height: 320px;
+    }
+    .BurgerScroolHider {
+        width: 320px;
+    }    
+}
+
