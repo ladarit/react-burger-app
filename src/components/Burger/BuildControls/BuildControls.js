@@ -7,16 +7,19 @@ const controls = [
     {ingrName: 'Meat', type: 'meat'},
     {ingrName: 'Bacon', type: 'bacon'},
     {ingrName: 'Tomato', type: 'tomato'},
-    {ingrName: 'Cheese', type: 'cheese'},
+    {ingrName: 'Cheese', type: 'cheese'}
 ];
 
 const buildControls = (props) => (
     <div className={cssClasses.BuildControls}>
-        {controls.map((control)=>{
-            return <BuildControl 
+        {controls.map((control)=>(
+            <BuildControl
                 key={control.ingrName}    
-                ingrName={control.ingrName}/>;
-        })}
+                ingrName={control.ingrName}
+                added={() => props.ingredientAdded(control.type)}
+                removed={() => props.ingredientRemoved(control.type)}
+                isDisabled = {props.disabledInfo[control.type]}/>
+        ))}
     </div>
 );
 
