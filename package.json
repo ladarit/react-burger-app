@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react-app": "^3.1.1",
     "babel-runtime": "6.26.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -86,11 +89,16 @@
   },
   "babel": {
     "presets": [
+      "es2015",
       "react-app"
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "indent": ["error", 4],
+      "quotes": ["error","single"]
+    }
   },
   "devDependencies": {
     "webpack-notifier": "^1.6.0"
