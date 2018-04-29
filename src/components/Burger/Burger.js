@@ -20,7 +20,6 @@ const burger = (props) => {
     if(ingredientsArray.length === 0){
         ingredientsArray = <p>Please start adding ingredients</p>
     }
-    console.log(ingredientsArray);
     return(
         <div className={cssClasses.BurgerScroolHider}>
             <div className={cssClasses.Burger}>            
