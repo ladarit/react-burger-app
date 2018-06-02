@@ -2,6 +2,7 @@
   "name": "react-burger-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel": "^6.5.2",
@@ -96,8 +97,14 @@
   "eslintConfig": {
     "extends": "react-app",
     "rules": {
-      "indent": ["error", 4],
-      "quotes": ["error","single"]
+      "indent": [
+        "error",
+        4
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
     }
   },
   "devDependencies": {
